@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Monda", "Arial", "Noto Sans TC", "微軟正黑體", sans-serif;
+}
+
+/*#bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
+}*/
+
+#img_content{
+  position:absolute;
+  width:100vw;
+  height:400vh;
+  top:0;
+  left:0;
+  overflow:hidden;
+}
+
+#section1,
+#section2,
+#section3,
+#section4{
+  position:absolute;
+  width:100%;
+  height:25%;
+  left:0;
+  /*border:1px solid;*/
+}
+
+#section1{
+  top:0;
+}
+
+#section2{
+  top:25%;
+}
+
+#section3{
+  top:50%;
+}
+
+#section4{
+  top:75%;
+}
+
+.img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  left:0;
+  top:0;
+}
+
+.story_text{
+  position:absolute;
+  width:50%;
+  height:40%;
+  /*border:1px solid;*/
+  font-size:3vh;
+  letter-spacing:0.5vh;
+  line-height:1.5;
+  color:rgba(0,0,0,0.5);
+}
+
+.story_text.s1{
+  top:60%;
+  left:45%;
+}
+
+.story_text.s2{
+  top:50%;
+  left:5%;
+}
+
+
+.story_text.s3{
+  top:30%;
+  left:60%;
+}
+
+
+.story_text.s4{
+  top:55%;
+  left:25%;
+  text-align:center;
+}
+
+.gohome{
+  position:absolute;
+  width:20%;
+  height:10%;
+  top:75%;
+  left:40%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:rgba(0,0,0,0.5);
+  background:#f0ebd8;
+  text-decoration:none;
+  letter-spacing:0.5vh;
+  font-size:3vh;
+  font-weight:700;
+  border-radius:20vh;
+  box-shadow:0 0 3vh rgba(0,0,0,0.5);
+  animation:btn 2s infinite;
+  transition:0.5s;
+  
+  &:active{
+    box-shadow:none;
+    animation:none;
+  }
+}
+
+@keyframes btn{
+  0%{
+    transform:scale(1.1);
+  }
+}
