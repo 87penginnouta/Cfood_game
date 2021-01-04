@@ -10,14 +10,13 @@ body {
   font-family: "Monda", "Arial", "Noto Sans TC", "微軟正黑體", sans-serif;
 }
 
-/*#bg {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
-}*/
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
 
 #img_content{
   position:absolute;
@@ -53,6 +52,17 @@ body {
 
 #section4{
   top:75%;
+}
+
+.logo{
+  position:absolute;
+  width:auto;
+  height:10%;
+  top:5%;
+  left:80%;
+  filter:invert(1);
+  opacity:0.5;
+  animation:btn 2s infinite;
 }
 
 .img {
