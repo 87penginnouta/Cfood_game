@@ -6,8 +6,82 @@ body {
   font-family: "Monda", "Arial", "Noto Sans TC", "微軟正黑體", sans-serif;
 }
 
-.bg {
-  position: fixed;
+.loading_wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0ebd8;
+  z-index: 999;
+}
+
+.loading_content {
+  position: absolute;
+  width: 30vh;
+  height: 30vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ico {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./img/bg/loading.png");
+  background-size: cover;
+  animation: ico 3s linear infinite;
+  transform-origin: 30% 30%;
+}
+
+@keyframes ico {
+  0% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+
+  20% {
+    transform: translate(-50%, -50%) rotateY(90deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+
+  70% {
+    transform: translate(-50%, -50%) rotateY(90deg);
+  }
+}
+
+.word_lo {
+  position: absolute;
+  top: 50%;
+  font-size: 4vh;
+  color: #7eabb1;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+}
+
+.word_lo.w1 {
+  left: 20%;
+}
+
+.word_lo.w2 {
+  left: 40%;
+}
+
+.word_lo.w3 {
+  left: 60%;
+}
+
+.word_lo.w4 {
+  left: 80%;
+}
+
+
+#bg {
+  position: relative;
   width: 100%;
   height: 100%;
   top: 0;
