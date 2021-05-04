@@ -244,8 +244,6 @@ html {
   }
   
   .gohome{
-    0%{
-    transform:scale(1.05);
-    }
+    animation:none;
   }
 }
