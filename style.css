@@ -242,4 +242,10 @@ html {
     width: 120%;
     left: -10%;
   }
+  
+  .gohome{
+    0%{
+    transform:scale(1.05);
+    }
+  }
 }
